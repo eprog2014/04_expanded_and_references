@@ -19,7 +19,6 @@ feature {NONE} -- Initialization
 			a: A
 			b: B
 		do
-			--| Add your code here
 			create a
 			create b
 			Io.put_integer (a.value)
@@ -49,4 +48,28 @@ feature {NONE} -- Initialization
 			end
 
 
+
+
+
+
+
+
+
+
+
+
+
+	more_complicated
+		local
+			bertrand: PERSON
+			c1, c2: PERSON_HOLDER
+		do
+			create bertrand.make_with_name ("Bertrand")
+			c1.set_person (bertrand)
+			c2 := c1
+			bertrand.set_name("Bertrand Meyer")
+
+			Io.put_string (c2.person.name)
+
+		end
 end
