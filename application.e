@@ -27,7 +27,7 @@ feature {NONE} -- Initialization
 
 			Io.read_line
 
-			f_a(a)
+			Io.put_integer (f_a(a).value)
 			f_b(b)
 
 
@@ -37,9 +37,11 @@ feature {NONE} -- Initialization
 			Io.put_integer (b.value) -- 1
 		end
 
-		f_a (an_a: A)
+		f_a (an_a: A): A
 			do
 				an_a.modify
+				REsult := an_a
+
 			end
 
 		f_b (a_b: B)
