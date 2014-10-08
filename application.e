@@ -33,8 +33,8 @@ feature {NONE} -- Initialization
 
 			Io.read_line
 
-			Io.put_integer (a.value)
-			Io.put_integer (b.value)
+			Io.put_integer (a.value) -- 0
+			Io.put_integer (b.value) -- 1
 		end
 
 		f_a (an_a: A)
